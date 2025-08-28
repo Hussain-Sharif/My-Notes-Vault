@@ -30,18 +30,17 @@ ReactDOM (for web) and React Native (for mobile) are the **platform-specific ren
 ### Important Points
 - When we control the UI Elements like input using the state in the component is called Controlled Component.
 - Bundlers solved **DX (Developer Experience)** + **Browser compatibility** + **Performance**.
-- **DX**:
+- **DX & Performance**:
 	1) - Hot Module Replacement (HMR) → Live reload when coding.
 	2) Polyfills for old browsers.
 	3) Handling non-JS assets (images, CSS, fonts). 
 - **Performance**:
 	1) By bundling the Long CSS, JS & assests Files easily in single bundle which avoids too many Network calls. 
-- CRA uses webpack as Bundler to bundle the code's of all files into single file of javascript.
-- This process ensure broad Browser Compatibility. But, downfalls the performance during the development{This issue spotlight when development of the application grows larger}.
+- CRA uses webpack as Bundler to bundle the code's of all files into bundles of javascript.
+- This process ensure broad Browser Compatibility. But, downfalls the performance during the development  {This issue **spotlights** when development of the **application grows larger**}.
 - Reasons: Debugging Complexity, Mostly relied on Polyfills for browser Compatibility.
 - Vite uses esbuild + native ESM during dev = startup in <1s, HMR almost instant.
 - Config Hell: CRA hides Webpack config. To customize, devs had to `eject` (messy, irreversible).  
 Vite gives **simple plugin system** and easy config.
-- ```shell
 
-```
+
